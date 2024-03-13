@@ -7,16 +7,16 @@ import {demoThumbnailUrl,demoChannelUrl,demoVideoUrl,demoChannelTitle,demoVideoT
 const VideoCard = ({video : {id: {videoId},snippet}}) => {
     // console.log("---videoSnip-",videoId,snippet);
   return (
-    <Card sx={{width:{md:'280px', xs:'95%', boxShadow:'none',boxRadius:'0'}}}>
+    <Card sx={{width:{md:'280px',sm: '358px', xs:'100%', boxShadow:'none',boxRadius:'0', padding:'0px' ,margin:0}}}>
         <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
             <CardMedia
                 image={snippet?.thumbnails?.high?.url}
                 alt={snippet?.title}
-                sx={{width: 358, height: 180}}
+                sx={{width: { xs: '358px', sm: '358px',md:'350px'}, height: 185}}
             />
         </Link>
         <CardContent
-        style={{height:'80px', backgroundColor: '#1e1e1e'}}
+        style={{height:'60px', backgroundColor: '#1e1e1e'}}
         >
             <Link to={videoId ? `/video/${videoId}` : demoVideoUrl}>
                 <Typography variant='subtitle1' fontWeight='bold' color='#fff'
