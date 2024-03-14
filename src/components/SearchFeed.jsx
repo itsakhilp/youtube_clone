@@ -21,11 +21,11 @@ const SearchFeed = () => {
   return (
     <Box p={2} sx={{overflowY : 'auto',height: '90vh', flex: 2}}>
     <Typography
-      variant="h4"
-      fontWeight="bold"
+      variant="h6"
+      // fontWeight="bold"
       mb={2} sx={{color:'white'}}
     >
-      Seach Results for :<span style={{color:'red'}}>{searchTerm}</span>videos
+      Seach Results for<span style={{color:'red',textTransform:'capitalize'}}> {searchTerm}</span>
     </Typography>
     
     <Videos videos={videos} />

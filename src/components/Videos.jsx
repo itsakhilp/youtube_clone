@@ -2,9 +2,13 @@ import React from 'react'
 import { Stack, Box} from '@mui/material'
 import VideoCard from './VideoCard';
 import ChannelCard from './ChannelCard';
+import SkeletonCard from './SkeletonCard';
+
+// import Skeleton from './Skeleton';
 
 const Videos = ({videos,direction}) => {
-    console.log(videos);
+  if(!videos?.length) return <SkeletonCard/>
+    // console.log("-vvv",videos);
   return (
     <Stack direction={direction ||"row"} flexWrap="wrap" justifyContent="start"
     alignItems="start" gap={2} 
@@ -20,3 +24,4 @@ const Videos = ({videos,direction}) => {
 }
 
 export default Videos
+
