@@ -1,1 +1,2 @@
-https://itsakhilp.github.io/youtube_clone/
+## A YouTube Clone 
+Responsive Web Application built on React JS with Rapid API and Material UI 5
