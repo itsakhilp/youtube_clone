@@ -18,7 +18,7 @@ const Feed = () => {
       <Box
         sx={{
           height: { sx: "auto", md: "92vh" },
-          borderRight: "1px Solid #3d3d3d",
+          
           px: { sx: 0, md: 2 },
         }}
       >
@@ -29,7 +29,7 @@ const Feed = () => {
         <Typography
           className="copyright"
           variant="body2"
-          sx={{ mt: 1.5, color: "#fff" }}
+          sx={{ mt: 1.5, color: "#000" }}
         >
           CopyRight 2024 Akhil
         </Typography>
@@ -40,7 +40,7 @@ const Feed = () => {
         <Typography
           variant="h6"
           fontWeight="bold"
-          mb={2} sx={{color:'white'}}
+          mb={2} sx={{color: "#000"}}
         >
           {selectedCategory} <span style={{color:'red'}}>Videos</span>
         </Typography>

@@ -11,13 +11,14 @@ const App = () => {
   return (
    <>
       <HashRouter>
-        <Box sx={{backgroundColor: '#000'}}>
+        <Box sx={{backgroundColor: '#fff',padding:'40px'}}>
           <Navbar/>
           <Routes>
             <Route path='/' exact element={<Feed/>}/>
             <Route path='/video/:id' element={<VideoDetail/>}/>
             <Route path="/channel/:id" element={<ChannelDetail/>}/>
             <Route path='/search/:searchTerm' element={<SearchFeed/>}/>
+            {/* <img src="./assets/utube.png" alt="" /> */}
           </Routes>
         </Box>
       </HashRouter>
